@@ -1,0 +1,241 @@
+@prefix : <http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2> .
+
+<http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Presta
+:Presta rdf:type owl:ObjectProperty ;
+        rdfs:domain :Socio ;
+        rdfs:range :Obras .
+
+
+###  http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#devuelta
+:devuelta rdf:type owl:ObjectProperty ;
+          rdfs:domain :Obras ;
+          rdfs:range :Socio .
+
+
+###  http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#devuelve
+:devuelve rdf:type owl:ObjectProperty ;
+          rdfs:domain :Socio ;
+          rdfs:range :Obras .
+
+
+###  http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#escribe
+:escribe rdf:type owl:ObjectProperty ;
+         rdfs:domain :Autor ;
+         rdfs:range :Obras .
+
+
+###  http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#escrita
+:escrita rdf:type owl:ObjectProperty ;
+         rdfs:subPropertyOf owl:topObjectProperty ;
+         rdfs:domain :Obras ;
+         rdfs:range :Autor .
+
+
+###  http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#prestada
+:prestada rdf:type owl:ObjectProperty ;
+          rdfs:subPropertyOf owl:topObjectProperty ;
+          rdfs:domain :Obras ;
+          rdfs:range :Socio .
+
+
+###  http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#vende
+:vende rdf:type owl:ObjectProperty ;
+       rdfs:subPropertyOf owl:topObjectProperty ;
+       rdfs:domain :Socio ;
+       rdfs:range :Obras .
+
+
+###  http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#vendida
+:vendida rdf:type owl:ObjectProperty ;
+         rdfs:subPropertyOf owl:topObjectProperty ;
+         rdfs:domain :Obras ;
+         rdfs:range :Socio .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#ISBN
+:ISBN rdf:type owl:DatatypeProperty ;
+      rdfs:domain :Libros ;
+      rdfs:range xsd:long .
+
+
+###  http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#ISSN
+:ISSN rdf:type owl:DatatypeProperty ;
+      rdfs:domain :Comics ;
+      rdfs:range xsd:long .
+
+
+###  http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#activo
+:activo rdf:type owl:DatatypeProperty ;
+        rdfs:domain :Autor ,
+                    :Socio ;
+        rdfs:range xsd:boolean .
+
+
+###  http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#año
+:año rdf:type owl:DatatypeProperty ;
+     rdfs:domain :Comics ,
+                 :Libros ,
+                 :Peliculas ;
+     rdfs:range xsd:int .
+
+
+###  http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#direccion
+:direccion rdf:type owl:DatatypeProperty ;
+           rdfs:domain :Autor ,
+                       :Socio ;
+           rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#id
+:id rdf:type owl:DatatypeProperty ;
+    rdfs:domain :Autor ,
+                :Peliculas ,
+                :Socio ;
+    rdfs:range xsd:int .
+
+
+###  http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#nacionalidad
+:nacionalidad rdf:type owl:DatatypeProperty ;
+              rdfs:domain :Autor ,
+                          :Socio ;
+              rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#nombre
+:nombre rdf:type owl:DatatypeProperty ;
+        rdfs:domain :Autor ,
+                    :Comics ,
+                    :Libros ,
+                    :Peliculas ,
+                    :Socio ;
+        rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#telefono
+:telefono rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Autor ,
+                      :Socio ;
+          rdfs:range xsd:long .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Autor
+:Autor rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Comics
+:Comics rdf:type owl:Class ;
+        rdfs:subClassOf :Obras .
+
+
+###  http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Libros
+:Libros rdf:type owl:Class ;
+        rdfs:subClassOf :Obras .
+
+
+###  http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Obras
+:Obras rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Peliculas
+:Peliculas rdf:type owl:Class ;
+           rdfs:subClassOf :Obras .
+
+
+###  http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Socio
+:Socio rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Autor01
+:Autor01 rdf:type owl:NamedIndividual ,
+                  :Autor ;
+         :escribe :Libro01 ;
+         :activo "true"^^xsd:boolean ;
+         :direccion "carrera 1# 2 3" ;
+         :id 2 ;
+         :nacionalidad "MEX" ;
+         :nombre "jhon doe" ;
+         :telefono "1231231123"^^xsd:long .
+
+
+###  http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Autor02
+:Autor02 rdf:type owl:NamedIndividual ,
+                  :Autor ;
+         :escribe :Comic01 ,
+                  :Pelicula01 ;
+         :activo "true"^^xsd:boolean ;
+         :direccion "calle 4 #3 21" ;
+         :id 2 ;
+         :nacionalidad "MEX" ;
+         :nombre "autor de libro 2" ;
+         :telefono "123123123123"^^xsd:long .
+
+
+###  http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Comic01
+:Comic01 rdf:type owl:NamedIndividual ,
+                  :Comics ;
+         :escrita :Autor02 ;
+         :vendida :Socio01 ;
+         :ISSN "890890890908"^^xsd:long ;
+         :año 1997 ;
+         :nombre "el comic de la vida" .
+
+
+###  http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Libro01
+:Libro01 rdf:type owl:NamedIndividual ,
+                  :Libros ;
+         :escrita :Autor01 ;
+         :prestada :Socio01 ;
+         :ISBN "456456456456"^^xsd:long ;
+         :año 1999 ;
+         :nombre "el libro de la vida" .
+
+
+###  http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Pelicula01
+:Pelicula01 rdf:type owl:NamedIndividual ,
+                     :Peliculas ;
+            :devuelta :Socio01 ;
+            :escrita :Autor02 ;
+            :año 1998 ;
+            :id 1 ;
+            :nombre "la pelicula de la vida" .
+
+
+###  http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Socio01
+:Socio01 rdf:type owl:NamedIndividual ,
+                  :Socio ;
+         :Presta :Libro01 ;
+         :devuelve :Pelicula01 ;
+         :vende :Comic01 ;
+         :activo "true"^^xsd:boolean ;
+         :direccion "calle 12 #34 56" ;
+         :id 1 ;
+         :nacionalidad "CO" ;
+         :nombre "pedro perez" ;
+         :telefono "123123123"^^xsd:long .
+
+
+###  Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi

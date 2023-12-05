@@ -1,0 +1,538 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2">
+    <Prefix name="" IRI="http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Autor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Comics"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Libros"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Obras"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Peliculas"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Socio"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Presta"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#devuelta"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#devuelve"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#escribe"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#escrita"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#prestada"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#vende"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#vendida"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#ISBN"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#ISSN"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#activo"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#año"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#direccion"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#id"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#nacionalidad"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#nombre"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#telefono"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Autor01"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Autor02"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Comic01"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Libro01"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pelicula01"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Socio01"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Comics"/>
+        <Class IRI="#Obras"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Libros"/>
+        <Class IRI="#Obras"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Peliculas"/>
+        <Class IRI="#Obras"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#Autor"/>
+        <NamedIndividual IRI="#Autor01"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Autor"/>
+        <NamedIndividual IRI="#Autor02"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Comics"/>
+        <NamedIndividual IRI="#Comic01"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Libros"/>
+        <NamedIndividual IRI="#Libro01"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Peliculas"/>
+        <NamedIndividual IRI="#Pelicula01"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Socio"/>
+        <NamedIndividual IRI="#Socio01"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#escribe"/>
+        <NamedIndividual IRI="#Autor01"/>
+        <NamedIndividual IRI="#Libro01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#escribe"/>
+        <NamedIndividual IRI="#Autor02"/>
+        <NamedIndividual IRI="#Comic01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#escribe"/>
+        <NamedIndividual IRI="#Autor02"/>
+        <NamedIndividual IRI="#Pelicula01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#escrita"/>
+        <NamedIndividual IRI="#Comic01"/>
+        <NamedIndividual IRI="#Autor02"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#vendida"/>
+        <NamedIndividual IRI="#Comic01"/>
+        <NamedIndividual IRI="#Socio01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#escrita"/>
+        <NamedIndividual IRI="#Libro01"/>
+        <NamedIndividual IRI="#Autor01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#prestada"/>
+        <NamedIndividual IRI="#Libro01"/>
+        <NamedIndividual IRI="#Socio01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#devuelta"/>
+        <NamedIndividual IRI="#Pelicula01"/>
+        <NamedIndividual IRI="#Socio01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#escrita"/>
+        <NamedIndividual IRI="#Pelicula01"/>
+        <NamedIndividual IRI="#Autor02"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Presta"/>
+        <NamedIndividual IRI="#Socio01"/>
+        <NamedIndividual IRI="#Libro01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#devuelve"/>
+        <NamedIndividual IRI="#Socio01"/>
+        <NamedIndividual IRI="#Pelicula01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#vende"/>
+        <NamedIndividual IRI="#Socio01"/>
+        <NamedIndividual IRI="#Comic01"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#activo"/>
+        <NamedIndividual IRI="#Autor01"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#direccion"/>
+        <NamedIndividual IRI="#Autor01"/>
+        <Literal>carrera 1# 2 3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#id"/>
+        <NamedIndividual IRI="#Autor01"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nacionalidad"/>
+        <NamedIndividual IRI="#Autor01"/>
+        <Literal>MEX</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombre"/>
+        <NamedIndividual IRI="#Autor01"/>
+        <Literal>jhon doe</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#telefono"/>
+        <NamedIndividual IRI="#Autor01"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#long">1231231123</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#activo"/>
+        <NamedIndividual IRI="#Autor02"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#direccion"/>
+        <NamedIndividual IRI="#Autor02"/>
+        <Literal>calle 4 #3 21</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#id"/>
+        <NamedIndividual IRI="#Autor02"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nacionalidad"/>
+        <NamedIndividual IRI="#Autor02"/>
+        <Literal>MEX</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombre"/>
+        <NamedIndividual IRI="#Autor02"/>
+        <Literal>autor de libro 2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#telefono"/>
+        <NamedIndividual IRI="#Autor02"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#long">123123123123</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ISSN"/>
+        <NamedIndividual IRI="#Comic01"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#long">890890890908</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#año"/>
+        <NamedIndividual IRI="#Comic01"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1997</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombre"/>
+        <NamedIndividual IRI="#Comic01"/>
+        <Literal>el comic de la vida</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ISBN"/>
+        <NamedIndividual IRI="#Libro01"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#long">456456456456</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#año"/>
+        <NamedIndividual IRI="#Libro01"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1999</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombre"/>
+        <NamedIndividual IRI="#Libro01"/>
+        <Literal>el libro de la vida</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#año"/>
+        <NamedIndividual IRI="#Pelicula01"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1998</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#id"/>
+        <NamedIndividual IRI="#Pelicula01"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombre"/>
+        <NamedIndividual IRI="#Pelicula01"/>
+        <Literal>la pelicula de la vida</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#activo"/>
+        <NamedIndividual IRI="#Socio01"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#direccion"/>
+        <NamedIndividual IRI="#Socio01"/>
+        <Literal>calle 12 #34 56</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#id"/>
+        <NamedIndividual IRI="#Socio01"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nacionalidad"/>
+        <NamedIndividual IRI="#Socio01"/>
+        <Literal>CO</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombre"/>
+        <NamedIndividual IRI="#Socio01"/>
+        <Literal>pedro perez</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#telefono"/>
+        <NamedIndividual IRI="#Socio01"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#long">123123123</Literal>
+    </DataPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#escrita"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#prestada"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#vende"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#vendida"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Presta"/>
+        <Class IRI="#Socio"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#devuelta"/>
+        <Class IRI="#Obras"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#devuelve"/>
+        <Class IRI="#Socio"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#escribe"/>
+        <Class IRI="#Autor"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#escrita"/>
+        <Class IRI="#Obras"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#prestada"/>
+        <Class IRI="#Obras"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#vende"/>
+        <Class IRI="#Socio"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#vendida"/>
+        <Class IRI="#Obras"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Presta"/>
+        <Class IRI="#Obras"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#devuelta"/>
+        <Class IRI="#Socio"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#devuelve"/>
+        <Class IRI="#Obras"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#escribe"/>
+        <Class IRI="#Obras"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#escrita"/>
+        <Class IRI="#Autor"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#prestada"/>
+        <Class IRI="#Socio"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#vende"/>
+        <Class IRI="#Obras"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#vendida"/>
+        <Class IRI="#Socio"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="#ISBN"/>
+        <Class IRI="#Libros"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#ISSN"/>
+        <Class IRI="#Comics"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#activo"/>
+        <Class IRI="#Autor"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#activo"/>
+        <Class IRI="#Socio"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#año"/>
+        <Class IRI="#Comics"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#año"/>
+        <Class IRI="#Libros"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#año"/>
+        <Class IRI="#Peliculas"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#direccion"/>
+        <Class IRI="#Autor"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#direccion"/>
+        <Class IRI="#Socio"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#id"/>
+        <Class IRI="#Autor"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#id"/>
+        <Class IRI="#Peliculas"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#id"/>
+        <Class IRI="#Socio"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#nacionalidad"/>
+        <Class IRI="#Autor"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#nacionalidad"/>
+        <Class IRI="#Socio"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#nombre"/>
+        <Class IRI="#Autor"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#nombre"/>
+        <Class IRI="#Comics"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#nombre"/>
+        <Class IRI="#Libros"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#nombre"/>
+        <Class IRI="#Peliculas"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#nombre"/>
+        <Class IRI="#Socio"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#telefono"/>
+        <Class IRI="#Autor"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#telefono"/>
+        <Class IRI="#Socio"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#ISBN"/>
+        <Datatype abbreviatedIRI="xsd:long"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#ISSN"/>
+        <Datatype abbreviatedIRI="xsd:long"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#activo"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#año"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#direccion"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#id"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#nacionalidad"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#nombre"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#telefono"/>
+        <Datatype abbreviatedIRI="xsd:long"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+

@@ -1,0 +1,281 @@
+\documentclass{article}
+\usepackage{breqn}
+\parskip 0pt
+\parindent 0pt
+\oddsidemargin 0cm
+\textwidth 19cm
+\begin{document}
+
+\subsection*{Classes}
+
+\subsubsection*{Autor}
+
+\subsubsection*{Comics}
+
+Comics~\ensuremath{\sqsubseteq}~Obras~
+
+\subsubsection*{Libros}
+
+Libros~\ensuremath{\sqsubseteq}~Obras~
+
+\subsubsection*{Obras}
+
+\subsubsection*{Peliculas}
+
+Peliculas~\ensuremath{\sqsubseteq}~Obras~
+
+\subsubsection*{Socio}
+
+\section*{Object properties}\subsubsection*{Presta}
+
+\ensuremath{\exists}~Presta~Thing~\ensuremath{\sqsubseteq}~Socio
+
+\ensuremath{\top}~\ensuremath{\sqsubseteq}~\ensuremath{\forall}~Presta~Obras
+
+\subsubsection*{devuelta}
+
+\ensuremath{\exists}~devuelta~Thing~\ensuremath{\sqsubseteq}~Obras
+
+\ensuremath{\top}~\ensuremath{\sqsubseteq}~\ensuremath{\forall}~devuelta~Socio
+
+\subsubsection*{devuelve}
+
+\ensuremath{\exists}~devuelve~Thing~\ensuremath{\sqsubseteq}~Socio
+
+\ensuremath{\top}~\ensuremath{\sqsubseteq}~\ensuremath{\forall}~devuelve~Obras
+
+\subsubsection*{escribe}
+
+\ensuremath{\exists}~escribe~Thing~\ensuremath{\sqsubseteq}~Autor
+
+\ensuremath{\top}~\ensuremath{\sqsubseteq}~\ensuremath{\forall}~escribe~Obras
+
+\subsubsection*{escrita}
+
+~\ensuremath{\sqsubseteq}~topObjectProperty
+
+\ensuremath{\exists}~escrita~Thing~\ensuremath{\sqsubseteq}~Obras
+
+\ensuremath{\top}~\ensuremath{\sqsubseteq}~\ensuremath{\forall}~escrita~Autor
+
+\subsubsection*{prestada}
+
+~\ensuremath{\sqsubseteq}~topObjectProperty
+
+\ensuremath{\exists}~prestada~Thing~\ensuremath{\sqsubseteq}~Obras
+
+\ensuremath{\top}~\ensuremath{\sqsubseteq}~\ensuremath{\forall}~prestada~Socio
+
+\subsubsection*{topObjectProperty}
+
+\subsubsection*{vende}
+
+~\ensuremath{\sqsubseteq}~topObjectProperty
+
+\ensuremath{\exists}~vende~Thing~\ensuremath{\sqsubseteq}~Socio
+
+\ensuremath{\top}~\ensuremath{\sqsubseteq}~\ensuremath{\forall}~vende~Obras
+
+\subsubsection*{vendida}
+
+~\ensuremath{\sqsubseteq}~topObjectProperty
+
+\ensuremath{\exists}~vendida~Thing~\ensuremath{\sqsubseteq}~Obras
+
+\ensuremath{\top}~\ensuremath{\sqsubseteq}~\ensuremath{\forall}~vendida~Socio
+
+\section*{Data properties}\subsubsection*{ISBN}
+
+\ensuremath{\exists}~ISBN~Datatypehttp://www.w3.org/2000/01/rdf-schema#Literal~\ensuremath{\sqsubseteq}~Libros
+
+\ensuremath{\top}~\ensuremath{\sqsubseteq}~\ensuremath{\forall}~ISBN~Datatypehttp://www.w3.org/2001/XMLSchema#long
+
+\subsubsection*{ISSN}
+
+\ensuremath{\exists}~ISSN~Datatypehttp://www.w3.org/2000/01/rdf-schema#Literal~\ensuremath{\sqsubseteq}~Comics
+
+\ensuremath{\top}~\ensuremath{\sqsubseteq}~\ensuremath{\forall}~ISSN~Datatypehttp://www.w3.org/2001/XMLSchema#long
+
+\subsubsection*{activo}
+
+\ensuremath{\exists}~activo~Datatypehttp://www.w3.org/2000/01/rdf-schema#Literal~\ensuremath{\sqsubseteq}~Socio
+
+\ensuremath{\exists}~activo~Datatypehttp://www.w3.org/2000/01/rdf-schema#Literal~\ensuremath{\sqsubseteq}~Autor
+
+\ensuremath{\top}~\ensuremath{\sqsubseteq}~\ensuremath{\forall}~activo~Datatypehttp://www.w3.org/2001/XMLSchema#boolean
+
+\subsubsection*{año}
+
+\ensuremath{\exists}~año~Datatypehttp://www.w3.org/2000/01/rdf-schema#Literal~\ensuremath{\sqsubseteq}~Libros
+
+\ensuremath{\exists}~año~Datatypehttp://www.w3.org/2000/01/rdf-schema#Literal~\ensuremath{\sqsubseteq}~Peliculas
+
+\ensuremath{\exists}~año~Datatypehttp://www.w3.org/2000/01/rdf-schema#Literal~\ensuremath{\sqsubseteq}~Comics
+
+\ensuremath{\top}~\ensuremath{\sqsubseteq}~\ensuremath{\forall}~año~Datatypehttp://www.w3.org/2001/XMLSchema#int
+
+\subsubsection*{direccion}
+
+\ensuremath{\exists}~direccion~Datatypehttp://www.w3.org/2000/01/rdf-schema#Literal~\ensuremath{\sqsubseteq}~Autor
+
+\ensuremath{\exists}~direccion~Datatypehttp://www.w3.org/2000/01/rdf-schema#Literal~\ensuremath{\sqsubseteq}~Socio
+
+\ensuremath{\top}~\ensuremath{\sqsubseteq}~\ensuremath{\forall}~direccion~Datatypehttp://www.w3.org/2001/XMLSchema#string
+
+\subsubsection*{id}
+
+\ensuremath{\exists}~id~Datatypehttp://www.w3.org/2000/01/rdf-schema#Literal~\ensuremath{\sqsubseteq}~Peliculas
+
+\ensuremath{\exists}~id~Datatypehttp://www.w3.org/2000/01/rdf-schema#Literal~\ensuremath{\sqsubseteq}~Socio
+
+\ensuremath{\exists}~id~Datatypehttp://www.w3.org/2000/01/rdf-schema#Literal~\ensuremath{\sqsubseteq}~Autor
+
+\ensuremath{\top}~\ensuremath{\sqsubseteq}~\ensuremath{\forall}~id~Datatypehttp://www.w3.org/2001/XMLSchema#int
+
+\subsubsection*{nacionalidad}
+
+\ensuremath{\exists}~nacionalidad~Datatypehttp://www.w3.org/2000/01/rdf-schema#Literal~\ensuremath{\sqsubseteq}~Socio
+
+\ensuremath{\exists}~nacionalidad~Datatypehttp://www.w3.org/2000/01/rdf-schema#Literal~\ensuremath{\sqsubseteq}~Autor
+
+\ensuremath{\top}~\ensuremath{\sqsubseteq}~\ensuremath{\forall}~nacionalidad~Datatypehttp://www.w3.org/2001/XMLSchema#string
+
+\subsubsection*{nombre}
+
+\ensuremath{\exists}~nombre~Datatypehttp://www.w3.org/2000/01/rdf-schema#Literal~\ensuremath{\sqsubseteq}~Comics
+
+\ensuremath{\exists}~nombre~Datatypehttp://www.w3.org/2000/01/rdf-schema#Literal~\ensuremath{\sqsubseteq}~Autor
+
+\ensuremath{\exists}~nombre~Datatypehttp://www.w3.org/2000/01/rdf-schema#Literal~\ensuremath{\sqsubseteq}~Peliculas
+
+\ensuremath{\exists}~nombre~Datatypehttp://www.w3.org/2000/01/rdf-schema#Literal~\ensuremath{\sqsubseteq}~Libros
+
+\ensuremath{\exists}~nombre~Datatypehttp://www.w3.org/2000/01/rdf-schema#Literal~\ensuremath{\sqsubseteq}~Socio
+
+\ensuremath{\top}~\ensuremath{\sqsubseteq}~\ensuremath{\forall}~nombre~Datatypehttp://www.w3.org/2001/XMLSchema#string
+
+\subsubsection*{telefono}
+
+\ensuremath{\exists}~telefono~Datatypehttp://www.w3.org/2000/01/rdf-schema#Literal~\ensuremath{\sqsubseteq}~Socio
+
+\ensuremath{\exists}~telefono~Datatypehttp://www.w3.org/2000/01/rdf-schema#Literal~\ensuremath{\sqsubseteq}~Autor
+
+\ensuremath{\top}~\ensuremath{\sqsubseteq}~\ensuremath{\forall}~telefono~Datatypehttp://www.w3.org/2001/XMLSchema#long
+
+\section*{Individuals}\subsubsection*{Autor01}
+
+Autor01~:~Autor
+
+escribe(Autor01, Libro01)
+
+nombre~(Autor01~"jhon doe"\^\^http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral)
+
+nacionalidad~(Autor01~"MEX"\^\^http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral)
+
+id~(Autor01~"2"\^\^http://www.w3.org/2001/XMLSchema#decimal)
+
+direccion~(Autor01~"carrera 1# 2 3"\^\^http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral)
+
+telefono~(Autor01~"1231231123"\^\^http://www.w3.org/2001/XMLSchema#long)
+
+activo~(Autor01~"true"\^\^http://www.w3.org/2001/XMLSchema#boolean)
+
+\subsubsection*{Autor02}
+
+Autor02~:~Autor
+
+escribe(Autor02, Comic01)
+
+escribe(Autor02, Pelicula01)
+
+nacionalidad~(Autor02~"MEX"\^\^http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral)
+
+direccion~(Autor02~"calle 4 #3 21"\^\^http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral)
+
+id~(Autor02~"2"\^\^http://www.w3.org/2001/XMLSchema#decimal)
+
+nombre~(Autor02~"autor de libro 2"\^\^http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral)
+
+activo~(Autor02~"true"\^\^http://www.w3.org/2001/XMLSchema#boolean)
+
+telefono~(Autor02~"123123123123"\^\^http://www.w3.org/2001/XMLSchema#long)
+
+\subsubsection*{Comic01}
+
+Comic01~:~Comics
+
+escrita(Comic01, Autor02)
+
+vendida(Comic01, Socio01)
+
+ISSN~(Comic01~"890890890908"\^\^http://www.w3.org/2001/XMLSchema#long)
+
+año~(Comic01~"1997"\^\^http://www.w3.org/2001/XMLSchema#decimal)
+
+nombre~(Comic01~"el comic de la vida"\^\^http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral)
+
+\subsubsection*{Libro01}
+
+Libro01~:~Libros
+
+escrita(Libro01, Autor01)
+
+prestada(Libro01, Socio01)
+
+ISBN~(Libro01~"456456456456"\^\^http://www.w3.org/2001/XMLSchema#long)
+
+nombre~(Libro01~"el libro de la vida"\^\^http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral)
+
+año~(Libro01~"1999"\^\^http://www.w3.org/2001/XMLSchema#decimal)
+
+\subsubsection*{Pelicula01}
+
+Pelicula01~:~Peliculas
+
+escrita(Pelicula01, Autor02)
+
+devuelta(Pelicula01, Socio01)
+
+año~(Pelicula01~"1998"\^\^http://www.w3.org/2001/XMLSchema#decimal)
+
+id~(Pelicula01~"1"\^\^http://www.w3.org/2001/XMLSchema#integer)
+
+nombre~(Pelicula01~"la pelicula de la vida"\^\^http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral)
+
+\subsubsection*{Socio01}
+
+Socio01~:~Socio
+
+devuelve(Socio01, Pelicula01)
+
+Presta(Socio01, Libro01)
+
+vende(Socio01, Comic01)
+
+direccion~(Socio01~"calle 12 #34 56"\^\^http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral)
+
+id~(Socio01~"1"\^\^http://www.w3.org/2001/XMLSchema#decimal)
+
+activo~(Socio01~"true"\^\^http://www.w3.org/2001/XMLSchema#boolean)
+
+nombre~(Socio01~"pedro perez"\^\^http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral)
+
+telefono~(Socio01~"123123123"\^\^http://www.w3.org/2001/XMLSchema#long)
+
+nacionalidad~(Socio01~"CO"\^\^http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral)
+
+\section*{Datatypes}\subsubsection*{PlainLiteral}
+
+\subsubsection*{boolean}
+
+\subsubsection*{decimal}
+
+\subsubsection*{int}
+
+\subsubsection*{integer}
+
+\subsubsection*{long}
+
+\subsubsection*{string}
+
+\end{document}

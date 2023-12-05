@@ -1,0 +1,237 @@
+Prefix(:=<http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2/>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2>
+
+Declaration(Class(<http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Autor>))
+Declaration(Class(<http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Comics>))
+Declaration(Class(<http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Libros>))
+Declaration(Class(<http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Obras>))
+Declaration(Class(<http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Peliculas>))
+Declaration(Class(<http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Socio>))
+Declaration(ObjectProperty(<http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Presta>))
+Declaration(ObjectProperty(<http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#devuelta>))
+Declaration(ObjectProperty(<http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#devuelve>))
+Declaration(ObjectProperty(<http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#escribe>))
+Declaration(ObjectProperty(<http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#escrita>))
+Declaration(ObjectProperty(<http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#prestada>))
+Declaration(ObjectProperty(<http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#vende>))
+Declaration(ObjectProperty(<http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#vendida>))
+Declaration(DataProperty(<http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#ISBN>))
+Declaration(DataProperty(<http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#ISSN>))
+Declaration(DataProperty(<http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#activo>))
+Declaration(DataProperty(<http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#año>))
+Declaration(DataProperty(<http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#direccion>))
+Declaration(DataProperty(<http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#id>))
+Declaration(DataProperty(<http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#nacionalidad>))
+Declaration(DataProperty(<http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#nombre>))
+Declaration(DataProperty(<http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#telefono>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Autor01>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Autor02>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Comic01>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Libro01>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Pelicula01>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Socio01>))
+############################
+#   Object Properties
+############################
+
+# Object Property: <http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Presta> (<http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Presta>)
+
+ObjectPropertyDomain(<http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Presta> <http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Socio>)
+ObjectPropertyRange(<http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Presta> <http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Obras>)
+
+# Object Property: <http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#devuelta> (<http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#devuelta>)
+
+ObjectPropertyDomain(<http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#devuelta> <http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Obras>)
+ObjectPropertyRange(<http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#devuelta> <http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Socio>)
+
+# Object Property: <http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#devuelve> (<http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#devuelve>)
+
+ObjectPropertyDomain(<http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#devuelve> <http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Socio>)
+ObjectPropertyRange(<http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#devuelve> <http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Obras>)
+
+# Object Property: <http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#escribe> (<http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#escribe>)
+
+ObjectPropertyDomain(<http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#escribe> <http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Autor>)
+ObjectPropertyRange(<http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#escribe> <http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Obras>)
+
+# Object Property: <http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#escrita> (<http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#escrita>)
+
+SubObjectPropertyOf(<http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#escrita> owl:topObjectProperty)
+ObjectPropertyDomain(<http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#escrita> <http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Obras>)
+ObjectPropertyRange(<http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#escrita> <http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Autor>)
+
+# Object Property: <http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#prestada> (<http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#prestada>)
+
+SubObjectPropertyOf(<http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#prestada> owl:topObjectProperty)
+ObjectPropertyDomain(<http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#prestada> <http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Obras>)
+ObjectPropertyRange(<http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#prestada> <http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Socio>)
+
+# Object Property: <http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#vende> (<http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#vende>)
+
+SubObjectPropertyOf(<http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#vende> owl:topObjectProperty)
+ObjectPropertyDomain(<http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#vende> <http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Socio>)
+ObjectPropertyRange(<http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#vende> <http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Obras>)
+
+# Object Property: <http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#vendida> (<http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#vendida>)
+
+SubObjectPropertyOf(<http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#vendida> owl:topObjectProperty)
+ObjectPropertyDomain(<http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#vendida> <http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Obras>)
+ObjectPropertyRange(<http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#vendida> <http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Socio>)
+
+
+############################
+#   Data Properties
+############################
+
+# Data Property: <http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#ISBN> (<http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#ISBN>)
+
+DataPropertyDomain(<http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#ISBN> <http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Libros>)
+DataPropertyRange(<http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#ISBN> xsd:long)
+
+# Data Property: <http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#ISSN> (<http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#ISSN>)
+
+DataPropertyDomain(<http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#ISSN> <http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Comics>)
+DataPropertyRange(<http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#ISSN> xsd:long)
+
+# Data Property: <http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#activo> (<http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#activo>)
+
+DataPropertyDomain(<http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#activo> <http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Autor>)
+DataPropertyDomain(<http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#activo> <http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Socio>)
+DataPropertyRange(<http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#activo> xsd:boolean)
+
+# Data Property: <http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#año> (<http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#año>)
+
+DataPropertyDomain(<http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#año> <http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Comics>)
+DataPropertyDomain(<http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#año> <http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Libros>)
+DataPropertyDomain(<http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#año> <http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Peliculas>)
+DataPropertyRange(<http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#año> xsd:int)
+
+# Data Property: <http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#direccion> (<http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#direccion>)
+
+DataPropertyDomain(<http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#direccion> <http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Autor>)
+DataPropertyDomain(<http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#direccion> <http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Socio>)
+DataPropertyRange(<http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#direccion> xsd:string)
+
+# Data Property: <http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#id> (<http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#id>)
+
+DataPropertyDomain(<http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#id> <http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Autor>)
+DataPropertyDomain(<http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#id> <http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Peliculas>)
+DataPropertyDomain(<http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#id> <http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Socio>)
+DataPropertyRange(<http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#id> xsd:int)
+
+# Data Property: <http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#nacionalidad> (<http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#nacionalidad>)
+
+DataPropertyDomain(<http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#nacionalidad> <http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Autor>)
+DataPropertyDomain(<http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#nacionalidad> <http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Socio>)
+DataPropertyRange(<http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#nacionalidad> xsd:string)
+
+# Data Property: <http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#nombre> (<http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#nombre>)
+
+DataPropertyDomain(<http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#nombre> <http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Autor>)
+DataPropertyDomain(<http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#nombre> <http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Comics>)
+DataPropertyDomain(<http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#nombre> <http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Libros>)
+DataPropertyDomain(<http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#nombre> <http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Peliculas>)
+DataPropertyDomain(<http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#nombre> <http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Socio>)
+DataPropertyRange(<http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#nombre> xsd:string)
+
+# Data Property: <http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#telefono> (<http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#telefono>)
+
+DataPropertyDomain(<http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#telefono> <http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Autor>)
+DataPropertyDomain(<http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#telefono> <http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Socio>)
+DataPropertyRange(<http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#telefono> xsd:long)
+
+
+
+############################
+#   Classes
+############################
+
+# Class: <http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Comics> (<http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Comics>)
+
+SubClassOf(<http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Comics> <http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Obras>)
+
+# Class: <http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Libros> (<http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Libros>)
+
+SubClassOf(<http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Libros> <http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Obras>)
+
+# Class: <http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Peliculas> (<http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Peliculas>)
+
+SubClassOf(<http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Peliculas> <http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Obras>)
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: <http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Autor01> (<http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Autor01>)
+
+ClassAssertion(<http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Autor> <http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Autor01>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#escribe> <http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Autor01> <http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Libro01>)
+DataPropertyAssertion(<http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#activo> <http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Autor01> "true"^^xsd:boolean)
+DataPropertyAssertion(<http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#direccion> <http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Autor01> "carrera 1# 2 3")
+DataPropertyAssertion(<http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#id> <http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Autor01> "2"^^xsd:decimal)
+DataPropertyAssertion(<http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#nacionalidad> <http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Autor01> "MEX")
+DataPropertyAssertion(<http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#nombre> <http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Autor01> "jhon doe")
+DataPropertyAssertion(<http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#telefono> <http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Autor01> "1231231123"^^xsd:long)
+
+# Individual: <http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Autor02> (<http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Autor02>)
+
+ClassAssertion(<http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Autor> <http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Autor02>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#escribe> <http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Autor02> <http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Comic01>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#escribe> <http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Autor02> <http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Pelicula01>)
+DataPropertyAssertion(<http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#activo> <http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Autor02> "true"^^xsd:boolean)
+DataPropertyAssertion(<http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#direccion> <http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Autor02> "calle 4 #3 21")
+DataPropertyAssertion(<http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#id> <http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Autor02> "2"^^xsd:decimal)
+DataPropertyAssertion(<http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#nacionalidad> <http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Autor02> "MEX")
+DataPropertyAssertion(<http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#nombre> <http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Autor02> "autor de libro 2")
+DataPropertyAssertion(<http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#telefono> <http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Autor02> "123123123123"^^xsd:long)
+
+# Individual: <http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Comic01> (<http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Comic01>)
+
+ClassAssertion(<http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Comics> <http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Comic01>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#escrita> <http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Comic01> <http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Autor02>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#vendida> <http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Comic01> <http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Socio01>)
+DataPropertyAssertion(<http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#ISSN> <http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Comic01> "890890890908"^^xsd:long)
+DataPropertyAssertion(<http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#año> <http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Comic01> "1997"^^xsd:decimal)
+DataPropertyAssertion(<http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#nombre> <http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Comic01> "el comic de la vida")
+
+# Individual: <http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Libro01> (<http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Libro01>)
+
+ClassAssertion(<http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Libros> <http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Libro01>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#escrita> <http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Libro01> <http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Autor01>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#prestada> <http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Libro01> <http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Socio01>)
+DataPropertyAssertion(<http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#ISBN> <http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Libro01> "456456456456"^^xsd:long)
+DataPropertyAssertion(<http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#año> <http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Libro01> "1999"^^xsd:decimal)
+DataPropertyAssertion(<http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#nombre> <http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Libro01> "el libro de la vida")
+
+# Individual: <http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Pelicula01> (<http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Pelicula01>)
+
+ClassAssertion(<http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Peliculas> <http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Pelicula01>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#devuelta> <http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Pelicula01> <http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Socio01>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#escrita> <http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Pelicula01> <http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Autor02>)
+DataPropertyAssertion(<http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#año> <http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Pelicula01> "1998"^^xsd:decimal)
+DataPropertyAssertion(<http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#id> <http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Pelicula01> "1"^^xsd:integer)
+DataPropertyAssertion(<http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#nombre> <http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Pelicula01> "la pelicula de la vida")
+
+# Individual: <http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Socio01> (<http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Socio01>)
+
+ClassAssertion(<http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Socio> <http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Socio01>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Presta> <http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Socio01> <http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Libro01>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#devuelve> <http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Socio01> <http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Pelicula01>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#vende> <http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Socio01> <http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Comic01>)
+DataPropertyAssertion(<http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#activo> <http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Socio01> "true"^^xsd:boolean)
+DataPropertyAssertion(<http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#direccion> <http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Socio01> "calle 12 #34 56")
+DataPropertyAssertion(<http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#id> <http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Socio01> "1"^^xsd:decimal)
+DataPropertyAssertion(<http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#nacionalidad> <http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Socio01> "CO")
+DataPropertyAssertion(<http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#nombre> <http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Socio01> "pedro perez")
+DataPropertyAssertion(<http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#telefono> <http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Socio01> "123123123"^^xsd:long)
+
+
+)

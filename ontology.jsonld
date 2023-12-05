@@ -1,0 +1,369 @@
+[ {
+  "@id" : "http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ]
+}, {
+  "@id" : "http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Autor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Autor01",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Autor" ],
+  "http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#activo" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#direccion" : [ {
+    "@value" : "carrera 1# 2 3"
+  } ],
+  "http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#escribe" : [ {
+    "@id" : "http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Libro01"
+  } ],
+  "http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#id" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "2"
+  } ],
+  "http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#nacionalidad" : [ {
+    "@value" : "MEX"
+  } ],
+  "http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#nombre" : [ {
+    "@value" : "jhon doe"
+  } ],
+  "http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#telefono" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#long",
+    "@value" : "1231231123"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Autor02",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Autor" ],
+  "http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#activo" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#direccion" : [ {
+    "@value" : "calle 4 #3 21"
+  } ],
+  "http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#escribe" : [ {
+    "@id" : "http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Comic01"
+  }, {
+    "@id" : "http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Pelicula01"
+  } ],
+  "http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#id" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "2"
+  } ],
+  "http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#nacionalidad" : [ {
+    "@value" : "MEX"
+  } ],
+  "http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#nombre" : [ {
+    "@value" : "autor de libro 2"
+  } ],
+  "http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#telefono" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#long",
+    "@value" : "123123123123"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Comic01",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Comics" ],
+  "http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#ISSN" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#long",
+    "@value" : "890890890908"
+  } ],
+  "http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#año" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "1997"
+  } ],
+  "http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#escrita" : [ {
+    "@id" : "http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Autor02"
+  } ],
+  "http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#nombre" : [ {
+    "@value" : "el comic de la vida"
+  } ],
+  "http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#vendida" : [ {
+    "@id" : "http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Socio01"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Comics",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Obras"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#ISBN",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Libros"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#long"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#ISSN",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Comics"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#long"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Libro01",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Libros" ],
+  "http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#ISBN" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#long",
+    "@value" : "456456456456"
+  } ],
+  "http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#año" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "1999"
+  } ],
+  "http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#escrita" : [ {
+    "@id" : "http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Autor01"
+  } ],
+  "http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#nombre" : [ {
+    "@value" : "el libro de la vida"
+  } ],
+  "http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#prestada" : [ {
+    "@id" : "http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Socio01"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Libros",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Obras"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Obras",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Pelicula01",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Peliculas" ],
+  "http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#año" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "1998"
+  } ],
+  "http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#devuelta" : [ {
+    "@id" : "http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Socio01"
+  } ],
+  "http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#escrita" : [ {
+    "@id" : "http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Autor02"
+  } ],
+  "http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#id" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ],
+  "http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#nombre" : [ {
+    "@value" : "la pelicula de la vida"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Peliculas",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Obras"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Presta",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Socio"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Obras"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Socio",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Socio01",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Socio" ],
+  "http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Presta" : [ {
+    "@id" : "http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Libro01"
+  } ],
+  "http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#activo" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#devuelve" : [ {
+    "@id" : "http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Pelicula01"
+  } ],
+  "http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#direccion" : [ {
+    "@value" : "calle 12 #34 56"
+  } ],
+  "http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#id" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "1"
+  } ],
+  "http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#nacionalidad" : [ {
+    "@value" : "CO"
+  } ],
+  "http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#nombre" : [ {
+    "@value" : "pedro perez"
+  } ],
+  "http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#telefono" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#long",
+    "@value" : "123123123"
+  } ],
+  "http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#vende" : [ {
+    "@id" : "http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Comic01"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#activo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Autor"
+  }, {
+    "@id" : "http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Socio"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#año",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Comics"
+  }, {
+    "@id" : "http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Libros"
+  }, {
+    "@id" : "http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Peliculas"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#devuelta",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Obras"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Socio"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#devuelve",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Socio"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Obras"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#direccion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Autor"
+  }, {
+    "@id" : "http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Socio"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#escribe",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Autor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Obras"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#escrita",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Obras"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Autor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#id",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Autor"
+  }, {
+    "@id" : "http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Peliculas"
+  }, {
+    "@id" : "http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Socio"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#nacionalidad",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Autor"
+  }, {
+    "@id" : "http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Socio"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#nombre",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Autor"
+  }, {
+    "@id" : "http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Comics"
+  }, {
+    "@id" : "http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Libros"
+  }, {
+    "@id" : "http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Peliculas"
+  }, {
+    "@id" : "http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Socio"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#prestada",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Obras"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Socio"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#telefono",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Autor"
+  }, {
+    "@id" : "http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Socio"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#long"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#vende",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Socio"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Obras"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#vendida",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Obras"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/desarrollador/ontologies/2023/11/untitled-ontology-2#Socio"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+} ]
